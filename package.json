@@ -1,0 +1,12 @@
+{
+  "name": "preddi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jair Pérez <jairperezpowered@gmail.com> (instagram.com/jairperezpowered)",
+  "license": "MIT"
+}
