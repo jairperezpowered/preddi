@@ -1,11 +1,11 @@
 module.exports = {
     entry: './src/index.js',
     output: {
-      path: __dirname + '/dist',
+      path: __dirname + '/out',
       publicPath: '/',
       filename: 'bundle.js'
     },
     devServer: {
-      contentBase: './dist'
+      contentBase: './out'
     }
   };
