@@ -41,15 +41,11 @@ module.exports = {
       filename: 'bundle.js'
     },
     plugins: [
-      new webpack.HotModuleReplacementPlugin(),
-      new HtmlWebpackPlugin({
-        title: 'Preddi, Minimal tools',
-        template: './src/index.html'
-      })
+      new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
       contentBase: './out',
-      before: (app, server) => {
+      after: (app, server) => {
         app.get('*', (req, res) => {
           res.sendFile(__dirname + '/out/index.html')
         })
