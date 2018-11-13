@@ -1,7 +1,8 @@
+import './style.scss'
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = 'My Minimal React Webpack Babel Setup';
+const title = 'Preddi minimal tool';
 
 ReactDOM.render(
   <div>{title}</div>,
