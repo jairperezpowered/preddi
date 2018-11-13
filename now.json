@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "name": "preddi",
+    "alias": "preddi.now.sh",
+    "builds": [
+        {"src": "src/server.js", "use": "@now/node"}
+    ],
+    "routes": [
+        {"src": "src/server.js", "dest": "/" }
+    ]
+}
