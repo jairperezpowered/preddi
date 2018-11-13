@@ -1,5 +1,4 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
     entry: './src/index.jsx',
@@ -13,7 +12,7 @@ module.exports = {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          use: ['babel-loader', 'eslint-loader']
+          use: ['babel-loader']
         },
         {
           test: /\.scss$/,
