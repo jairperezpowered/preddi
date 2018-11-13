@@ -49,6 +49,11 @@ module.exports = {
     ],
     devServer: {
       contentBase: './out',
+      before: (app, server) => {
+        app.get('*', (req, res) => {
+          res.sendFile(__dirname + '/out/index.html')
+        })
+      },
       hot: true
     }
   }
