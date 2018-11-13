@@ -1,0 +1,7 @@
+{
+    "version": 1,
+    "public": true,
+    "name": "preddi",
+    "alias": "preddi.now.sh",
+    "type": "docker"
+}

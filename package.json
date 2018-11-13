@@ -1,12 +1,13 @@
 {
   "name": "preddi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Preddi, Minimal Tools",
   "main": "index.js",
   "scripts": {
     "start": "node server",
     "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "npm run build && now && now alias"
   },
   "keywords": [],
   "author": "Jair Pérez <jairperezpowered@gmail.com> (instagram.com/jairperezpowered)",
