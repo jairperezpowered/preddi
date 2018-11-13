@@ -1,4 +1,5 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './src/index.jsx',
@@ -40,7 +41,11 @@ module.exports = {
       filename: 'bundle.js'
     },
     plugins: [
-      new webpack.HotModuleReplacementPlugin()
+      new webpack.HotModuleReplacementPlugin(),
+      new HtmlWebpackPlugin({
+        title: 'Preddi, Minimal tools',
+        template: './src/index.html'
+      })
     ],
     devServer: {
       contentBase: './out',
