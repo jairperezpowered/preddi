@@ -43,7 +43,8 @@ module.exports = {
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({
-        title: 'Preddi, Minimal tools'
+        title: 'Preddi, Minimal tools',
+        template: './src/index.html'
       })
     ],
     devServer: {
